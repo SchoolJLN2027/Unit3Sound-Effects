@@ -699,7 +699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0348fea9a45ca2a4480df3b97d487331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Obstacles: {fileID: 9002041891554284399}
+  Obstacles: {fileID: 4357920026526468825, guid: 4882be0b79d66924d9923f7a675fce99, type: 3}
 --- !u!4 &1761840236
 Transform:
   m_ObjectHideFlags: 0
@@ -877,11 +877,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4882be0b79d66924d9923f7a675fce99, type: 3}
---- !u!1 &9002041891554284399 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4357920026526468825, guid: 4882be0b79d66924d9923f7a675fce99, type: 3}
-  m_PrefabInstance: {fileID: 5233687458636199795}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
