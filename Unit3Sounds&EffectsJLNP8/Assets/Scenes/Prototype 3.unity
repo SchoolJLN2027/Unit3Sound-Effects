@@ -406,7 +406,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 606910ec401804eb09925f0d57909c04, type: 3}
@@ -545,7 +545,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.8, y: 0.42557955, z: -0.17}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.7453, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -587,7 +587,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &835818919
 GameObject:
@@ -819,8 +819,10 @@ MonoBehaviour:
   crashSound: {fileID: 8300000, guid: 4bcde6de2166e41e284ec46d8a01fb90, type: 3}
   jumpForce: 15
   gravityModifier: 2
+  score: 0
   isOnGround: 1
   gameOver: 0
+  doubleJump: 0
 --- !u!65 &1076280331
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -850,7 +852,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076280329}
   serializedVersion: 4
-  m_Mass: 1.25
+  m_Mass: 1.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1088,7 +1090,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0348fea9a45ca2a4480df3b97d487331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Obstacles: {fileID: 4357920026526468825, guid: 4882be0b79d66924d9923f7a675fce99, type: 3}
+  Obstacles:
+  - {fileID: 5061204100498828465, guid: ed2e53cef5f4cdd4f80a3645c4303924, type: 3}
+  - {fileID: 4357920026526468825, guid: 4882be0b79d66924d9923f7a675fce99, type: 3}
+  - {fileID: 7424378171156422007, guid: 4f930cff0f803054a9db9ba2fedb7715, type: 3}
 --- !u!4 &1761840236
 Transform:
   m_ObjectHideFlags: 0
