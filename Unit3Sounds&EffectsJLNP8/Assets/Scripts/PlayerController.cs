@@ -54,11 +54,12 @@ public class PlayerController : MonoBehaviour
             dirtSplatter.Stop();
             playerAudio.PlayOneShot(jumpSound, 1.0f);
         }
-        
+
         if (Input.GetKeyDown(KeyCode.D))
         {
             dash = true;
-            dashScore =+ Time.deltaTime * 2;
+            dashScore += Time.deltaTime * 2;
+            Debug.Log("dash");
         }
 
         score += Time.deltaTime;
