@@ -820,6 +820,7 @@ MonoBehaviour:
   jumpForce: 15
   gravityModifier: 2
   score: 0
+  dashScore: 0
   isOnGround: 1
   gameOver: 0
   doubleJump: 0
@@ -1094,6 +1095,7 @@ MonoBehaviour:
   - {fileID: 5061204100498828465, guid: ed2e53cef5f4cdd4f80a3645c4303924, type: 3}
   - {fileID: 4357920026526468825, guid: 4882be0b79d66924d9923f7a675fce99, type: 3}
   - {fileID: 7424378171156422007, guid: 4f930cff0f803054a9db9ba2fedb7715, type: 3}
+  - {fileID: 497163453030122838, guid: 9432516747b369f41b7ef9ad10e707f7, type: 3}
 --- !u!4 &1761840236
 Transform:
   m_ObjectHideFlags: 0

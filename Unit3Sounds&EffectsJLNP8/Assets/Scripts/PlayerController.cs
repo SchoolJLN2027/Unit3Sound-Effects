@@ -19,10 +19,12 @@ public class PlayerController : MonoBehaviour
     public float gravityModifier = 2;
 
     public float score = 0;
+    public float dashScore = 0;
 
     public bool isOnGround = true;
     public bool gameOver = false;
     public bool doubleJump = false;
+    public bool dash = false;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +54,12 @@ public class PlayerController : MonoBehaviour
             dirtSplatter.Stop();
             playerAudio.PlayOneShot(jumpSound, 1.0f);
         }
+        
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            dash = true;
+            dashScore =+ Time.deltaTime * 2;
+        }
 
         score += Time.deltaTime;
     }
@@ -67,6 +75,7 @@ public class PlayerController : MonoBehaviour
             gameOver = true;
             Debug.Log("Game Over");
             Debug.Log("Score: " + Mathf.RoundToInt(score));
+            
             playerAnim.SetBool("Death_b", true);
             playerAnim.SetInteger("DeathType_int", 1);
             explosionPartical.Play();
