@@ -406,7 +406,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 606910ec401804eb09925f0d57909c04, type: 3}
@@ -824,6 +824,7 @@ MonoBehaviour:
   isOnGround: 1
   gameOver: 0
   doubleJump: 0
+  dash: 0
 --- !u!65 &1076280331
 BoxCollider:
   m_ObjectHideFlags: 0

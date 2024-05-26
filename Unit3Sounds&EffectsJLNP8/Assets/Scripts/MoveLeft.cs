@@ -15,13 +15,13 @@ public class MoveLeft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerControllerScript.gameOver == false)
+        if (playerControllerScript.gameOver == false && playerControllerScript.dash == false)
         {
             transform.Translate(Vector3.left * Time.deltaTime * speed);
         }
         else if(playerControllerScript.gameOver == false && playerControllerScript.dash == true)
         {
-            transform.Translate(Vector3.left * (speed * 2) * Time.deltaTime);
+            transform.Translate(Vector3.left * (speed * 1.5f) * Time.deltaTime);
         }
     }
 }

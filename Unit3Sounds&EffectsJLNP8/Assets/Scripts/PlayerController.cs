@@ -55,14 +55,17 @@ public class PlayerController : MonoBehaviour
             playerAudio.PlayOneShot(jumpSound, 1.0f);
         }
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             dash = true;
             dashScore += Time.deltaTime * 2;
-            Debug.Log("dash");
+        } 
+        else if (!Input.GetKey(KeyCode.LeftShift))
+        {
+            dash = false;
         }
 
-        score += Time.deltaTime;
+        score += Time.deltaTime + dashScore;
     }
     private void OnCollisionEnter(Collision collision)
     {
